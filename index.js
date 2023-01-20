@@ -1,7 +1,8 @@
+const http = require('http');
 
-const {x,y,z} = require('./app')
-// console.log("y",y)
-const array = [ 2,5,9,0,3]
 
- const result = array.filter((item)=>item>3)
- console.log("result",result)
+http.createServer((req,resp) =>
+{
+resp.write("<h1>http server running</h1>");
+resp.end();
+}).listen(4500);
