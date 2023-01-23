@@ -1,7 +1,12 @@
+// console.log('first console.log')
+// setTimeout(() => {
+//   console.log('Second console.log')
+// }, 2000)
+// console.log('third console.log')
+const a = 10
+let b = 0
+ setTimeout(() => {
+  b =10
+}, 2000);
 
-const {x,y,z} = require('./app')
-// console.log("y",y)
-const array = [ 2,5,9,0,3]
-
- const result = array.filter((item)=>item>3)
- console.log("result",result)
+console.log(a+b);
