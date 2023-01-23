@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/gauravMaina/nodejs-tut/issues"
   },
-  "homepage": "https://github.com/gauravMaina/nodejs-tut#readme"
+  "homepage": "https://github.com/gauravMaina/nodejs-tut#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
