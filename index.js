@@ -10,5 +10,11 @@ app.get('', (req, res) => {
   }
   res.render('profile',{user})
 })
+app.get('/login', (req, res) => {
+  const user ={
+    skills:['php','java','.net','python','node']
+  }
+  res.render('login',{user})
+})
 
 app.listen(9000)

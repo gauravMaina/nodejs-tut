@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Profile</title>
+</head>
+<body>
+    <%- include('common/header')%>
+    <h4>This is Login page</h4>
+    <ul>
+        <% user.skills.forEach((item)=>{%>
+            <li><%= item %></li>
+        <% })%>
+    </ul>
+</body>
+</html>
