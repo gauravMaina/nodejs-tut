@@ -1,17 +1,6 @@
 const express = require('express')
+const path = require('path')
 const app = express()
-
-app.get('', (req, res) => {
-  res.send(`<h1> Welcome ,${req.query.name} ${req.query.lastname}</h1>`)
-})
-app.get('/help', (req, res) => {
-  res.send({
-    name: 'Gaurav',
-    age: 23,
-    gender: 'Male'
-  })
-})
-app.get('/about', (req, res) => {
-  res.send('<h1>hello, this about page</h1>')
-})
+const publicPath = path.join(__dirname, 'public')
+app.use(express.static(publicPath))
 app.listen(9000)
