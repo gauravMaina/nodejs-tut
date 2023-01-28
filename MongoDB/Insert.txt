@@ -1,0 +1,3 @@
+db.courses.insertOne({name:"Java",type:"Backend",days:30});//insert one Document at a time
+db.courses.insertMany({name:"",type:"Backend",days:30},{name:"Java",type:"Backend",days:30});
+//above Query for insert maltiple Document at same time 

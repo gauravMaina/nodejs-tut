@@ -1,0 +1,3 @@
+db.courses.updateOne({name:"Angular"},{$set{name:"React JS"}});//update only one record
+db.courses.updateMany({name:"Angular"},{$set{name:"React JS"}});//update all record whose satisfy that Condition 
+db.courses.updateMany({name:"Angular"},{$set{name:"React JS",days:4}});//update all name and days whose satisfy that Condition 

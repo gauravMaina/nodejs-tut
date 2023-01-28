@@ -1,0 +1,8 @@
+db.courses.find();//display all data in your collection that inside your Database
+db.courses.find().pretty();display all data in beautiful manner
+db.courses.find({type:"Frontend"}).pretty();//display only Frontend Data
+db.courses.find({type:"Frontend"}).pretty().limit(1);//display only Frontend Data 1 record when using one data.
+db.courses.findOne({type:"Frontend"});//display only Frontend Data 1 record when using one data.
+db.courses.find({type:"Frontend"},{name:1});//display only Frontend Data language name and id.
+db.courses.findOne({type:"Frontend"},{name:1});//display only Frontend Data language name and id.
+db.courses.find({type:"Frontend"},{name:1,_id:0});//display only Frontend Data language name .

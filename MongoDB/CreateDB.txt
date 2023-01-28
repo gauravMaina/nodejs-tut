@@ -1,0 +1,6 @@
+"C:\Program Files\MongoDB\Server\4.4\bin\mongo"  //this path copy and paste in cmd
+show dbs//this Syntax use for showing all Present in out system
+show collections //this syntax use for display all collections Present in our Database
+use Hefshine// use keyword swithing the Database if Database is allready Present else Create new Database
+db//db represent our curent Database
+db.courses.insertOne({name:"Java",type:"Backend",days:30});//CreatingCollection and insert data.
